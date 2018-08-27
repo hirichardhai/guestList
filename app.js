@@ -8,5 +8,11 @@ new Vue({
     },
     newNameText: '',
     guestName: []
+  },
+  methods: {
+    formSubmitted: function() {
+      this.guestName.push(this.newNameText)
+      this.newNameText = ''
+    }
   }
 });
