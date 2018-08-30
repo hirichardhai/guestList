@@ -58,7 +58,7 @@
               <div v-if="guestName.length > 0">
                 <div class="card-success rounded name-box"
                   v-for="name in sortNames">
-                    {{ name }}
+                    {{ name | formatName }}
                 </div>
               </div>
               <div v-else>
