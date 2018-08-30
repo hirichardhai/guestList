@@ -15,17 +15,18 @@
       <div class="row">
         <div class="col-sm-12 text-center">
           <h1>{{ appName }}</h1>
+          <hr>
         </div>
 
         <div>
-          <ul>
-            <template v-for="navLink in navLinks">
-              <li v-for="(value, key, index) in navLink">{{ key }} | {{ value }} | {{ index }}</li>
-              <hr>
-            </template>
+          <ul class="nav">
+            <div v-for="navLink in navLinks">
+              <li class="nav-item"><a class="nav-link" :href="navLink.url">{{ navLink.name }}</a></li>
+            </div>
           </ul>
         </div>
       </div>
+      <hr>
     </div>
   <div id="app">
 
