@@ -16,6 +16,15 @@
         <div class="col-sm-12 text-center">
           <h1>{{ appName }}</h1>
         </div>
+
+        <div>
+          <ul>
+            <template v-for="navLink in navLinks">
+              <li v-for="(value, key, index) in navLink">{{ key }} | {{ value }} | {{ index }}</li>
+              <hr>
+            </template>
+          </ul>
+        </div>
       </div>
     </div>
   <div id="app">
