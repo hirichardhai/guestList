@@ -14,7 +14,7 @@
     <div id="navigation">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h1>{{ appName }}</h1>
+          <h1 @click="changeTitle" ref="namez">Guest List</h1>
           <hr>
         </div>
 
@@ -27,7 +27,6 @@
         </div>
       </div>
       <hr>
-      <button @click="capacityChanged">Change capacity</button>
     </div>
   <div id="app">
 

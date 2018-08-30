@@ -53,10 +53,9 @@ let vm2 = new Vue({
     ]
   },
   methods: {
-    capacityChanged: function() {
-      vm1.eventCapacity = 15;
+    changeTitle: function() {
+      this.$refs.namez.innerText = 'Title changed';
+      console.log(this.$refs);
     }
   }
 })
-
-vm1.event
