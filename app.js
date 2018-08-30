@@ -3,8 +3,8 @@ let vm1 = new Vue({
   data: {
     event: {
       eventDate: 'August 14th - 16th',
-      eventTitle: 'Summer Festival!',
-      eventDescription: "It's back! This years summer festival will be in the beautiful countryside featuring our best line up ever!",
+      eventTitle: "Richard's Summer Event",
+      eventDescription: "Greetings! Glad to see you're interested in stopping by.  I would love to invite you over, please submit your name if you're interested in attending!",
       signUpText: 'Add your name to the guest list for <em>exclusive</em> offers:'
     },
     newNameText: '',
