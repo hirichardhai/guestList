@@ -32,7 +32,12 @@
               <p class="card-text" v-html="event.signUpText"></p>
 
               <form class="form-inline" @submit.prevent="formSubmitted">
-                <input type="text" id="nameInput" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Jane Doe" v-model="newNameText">
+                <input type="text" 
+                id="nameInput" 
+                class="form-control mb-2 mr-sm-2 mb-sm-0" 
+                placeholder="Jane Doe" 
+                v-model="newNameText"
+                @keyup.32="keyPressed">
                 <input type="submit" class="btn btn-primary"></input>
               </form>
               {{ newNameText }}
