@@ -2,10 +2,10 @@ let vm1 = new Vue({
   el: '#app',
   data: {
     event: {
-      eventDate: 'August 14th - 16th',
-      eventTitle: "Richard's Summer Event",
+      eventDate: 'January 16th, 2019',
+      eventTitle: "Richard's Party Shindig",
       eventDescription: "Greetings! Glad to see you're interested in stopping by.  I would love to invite you over, please submit your name if you're interested in attending!",
-      signUpText: 'Add your name to the guest list for <em>exclusive</em> offers:'
+      signUpText: 'Add your name to the guest list for <em>exclusive</em> offers and future updates:'
     },
     newNameText: '',
     guestName: [],
@@ -31,7 +31,7 @@ let vm1 = new Vue({
   },
   watch: {
     guestName: function(data) {
-      console.log('Watch triggered');
+      console.log('Watch triggered!');
     }
   },
   filters: {
