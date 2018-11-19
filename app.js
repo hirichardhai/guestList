@@ -58,10 +58,10 @@ let vm1 = new Vue({
     console.log('updated');
   },
   beforeDestroy: function() {
-    console.log('beforeDestroy');
+    console.log('beforeDestroyed');
   },
   destroy: function() {
-    console.log('destroy');
+    console.log('destroyed');
   }
 });
 
@@ -70,15 +70,15 @@ let vm2 = new Vue({
   data: {
     appName: 'Guest List',
     navLinks: [
-      {name: "Home", id: 1, url: "https://www.google.com"},
-      {name: "Upcoming events", id: 2, url: "https://www.amazon.com"},
-      {name: "Guest Benefits", id: 3, url: "https://www.ebay.com"},
-      {name: "Latest News", id: 4, url: "https://www.facebook.com"},
+      {name: "Home", id: 1, url: "https://richard-hai.github.io/"},
+      {name: "Upcoming events", id: 2, url: "https://richard-hai.github.io/"},
+      {name: "Guest Benefits", id: 3, url: "https://richard-hai.github.io/"},
+      {name: "Latest News", id: 4, url: "https://richard-hai.github.io/"},
     ]
   },
   methods: {
     changeTitle: function() {
-      this.$refs.namez.innerText = 'Title changed';
+      this.$refs.namez.innerText = 'Title changed!';
       console.log(this.$refs);
     }
   }
